@@ -17,7 +17,7 @@ class ContohResource(Resource):
         umur = request.form["umur"]
         identitas["nama"] = nama
         identitas["umur"] = umur
-        response = {"msg":"Data berhasil dimasukan"}
+        response = {"msg":"Data berhasil dimasukan bossku"}
         return response
     
 api.add_resource(ContohResource, "/api", methods=["GET", "POST"])
