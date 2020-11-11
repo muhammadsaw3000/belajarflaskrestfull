@@ -1,1 +1,1 @@
-web: gunicorn testflask.py:app --reload --workers 2
+web: gunicorn testflask:app --reload --workers 2
