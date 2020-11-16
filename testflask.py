@@ -12,7 +12,11 @@ SALARY_ID = None
 class ContohResource(Resource):
     def get(self):
         #response = { "msg":"Hallo dunia, ini app restfull pertamaku"}
-        return SALARY
+        #return SALARY
+        if request.form["INVOKE"] != "SALARY":
+            return "INVOKE ANDA ADALAH: "+request.form["INVOKE"]
+        else:
+            return SALARY
     
     def post(self):
         KODE_KANTOR = request.form["KODE_KANTOR"]
