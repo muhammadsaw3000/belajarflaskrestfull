@@ -31,5 +31,5 @@ class PostgresWrapper:
         #print(self.get_json_response(query))
         return self.get_json_response(query)
         
-dbconn = PostgresWrapper()
-print(dbconn.select_salary())
+#dbconn = PostgresWrapper()
+#print(dbconn.select_salary())
