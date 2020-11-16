@@ -40,7 +40,7 @@ class ContohResource(Resource):
         SALARY["NOM_TRANSFER"] = NOM_TRANSFER
         SALARY["TGL_UBAH"] = TGL_UBAH
         
-        response = {"msg":"Data berhasil disimpan. Salary ID = "+SALARY_ID}
+        response = {"msg":"Data berhasil disimpan."}
         return response
     
 api.add_resource(ContohResource, "/api", methods=["GET", "POST"])
