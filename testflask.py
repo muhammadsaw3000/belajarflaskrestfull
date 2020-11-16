@@ -1,7 +1,7 @@
 from flask import Flask, request
 from flask_restful import Resource, Api
 from flask_cors import CORS
-from insert import insert
+from insert import insert_salary
 
 app = Flask(__name__)
 api = Api(app)

@@ -31,3 +31,9 @@ def insert_salary(KODE_KANTOR,NAMA_KANTOR,ID_DOKUMEN,KETERANGAN,CENTANG,NAMA_BAN
             conn.close()
 
     return salary_id
+
+#if __name__ == '__main__':
+    #connect()
+
+#if __name__ == '__main__':
+    #insert_salary("43A","DEPUTI DIREKTUR BIDANG PENGEMBANGAN TEKNOLOGI INFORMASI","20101400655367","PEMBAYARAN GAJI NASIONAL BULAN OKTOBER 2020.",5,"MANDIRI","0700009726915","AGTRIA PRILIKA HERNIATY",10302093,"14/10/2020 18:02:13")
