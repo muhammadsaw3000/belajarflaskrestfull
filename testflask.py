@@ -15,6 +15,8 @@ class ContohResource(Resource):
     def get(self):
         #response = { "msg":"Hallo dunia, ini app restfull pertamaku"}
         #return SALARY
+        
+        #INI HANYA TEST SAJA
         if request.form["INVOKE"] != "SALARY":
             return "INVOKE ANDA ADALAH: "+request.form["INVOKE"]
         else:
