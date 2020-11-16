@@ -2,7 +2,7 @@ from flask import Flask, request
 from flask_restful import Resource, Api
 from flask_cors import CORS
 from insert import insert_salary
-from select import get_salary
+from selectsalary import select_salary
 
 app = Flask(__name__)
 api = Api(app)
@@ -17,7 +17,7 @@ class ContohResource(Resource):
         if request.form["INVOKE"] != "SALARY":
             return "INVOKE ANDA ADALAH: "+request.form["INVOKE"]
         else:
-            return get_salary()
+            return select_salary()
     
     def post(self):
         KODE_KANTOR = request.form["KODE_KANTOR"]

@@ -1,7 +1,7 @@
 import psycopg2
 from config import config
 
-def get_salary():
+def select_salary():
     """ query data from the salary table """
     conn = None
     try:
@@ -27,4 +27,4 @@ def get_salary():
             return {"msg":"Data tidak ditemukan."}
         
 #if __name__ == '__main__':
-    #get_salary()
+    #select_salary()
