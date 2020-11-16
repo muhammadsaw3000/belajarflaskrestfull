@@ -27,6 +27,7 @@ class ContohResource(Resource):
         TGL_UBAH = request.form["TGL_UBAH"]
         
         SALARY_ID = insert_salary(KODE_KANTOR,NAMA_KANTOR,ID_DOKUMEN,KETERANGAN,CENTANG,NAMA_BANK,NO_REKENING,ATAS_NAMA,NOM_TRANSFER,TGL_UBAH)
+        print(SALARY_ID)
         
         SALARY["KODE_KANTOR"] = KODE_KANTOR
         SALARY["NAMA_KANTOR"] = NAMA_KANTOR
