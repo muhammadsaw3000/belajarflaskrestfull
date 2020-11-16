@@ -26,6 +26,7 @@ pytz==2020.4
 PyYAML==5.3.1
 requests==2.24.0
 Resource==0.2.1
+simplejson==3.17.2
 six==1.15.0
 urllib3==1.25.11
 virtualenv==20.1.0
