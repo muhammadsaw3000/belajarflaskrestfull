@@ -2,6 +2,7 @@ from flask import Flask, request
 from flask_restful import Resource, Api
 from flask_cors import CORS
 from insert import insert_salary
+from insert import insert_kn_penduduk
 from selectsalary import *
 #from wrapper import *
 
