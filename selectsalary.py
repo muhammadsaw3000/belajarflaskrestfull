@@ -24,10 +24,13 @@ class PostgresWrapper:
         response = self.execute_and_fetch(cursor, query)
         return json.dumps(response)
     
-    def select_salary(self):
+    def select_salary(self, field, kondisi):
         self.connect()
         #query = 'SELECT * FROM public."SALARY" LIMIT 2;'
-        query = 'SELECT * FROM public."SALARY"'
+        if kondisi!='':
+            query = 'SELECT * FROM public."SALARY" WHERE "'+field+'"="'+kondisi+'"'
+        elif kondisi=="":
+            query = 'SELECT * FROM public."SALARY"'
         #print(self.get_json_response(query))
         return self.get_json_response(query)
         

@@ -21,7 +21,9 @@ class ContohResource(Resource):
             return "INVOKE ANDA ADALAH: "+request.form["INVOKE"]
         else:
             dbconn = PostgresWrapper()
-            return dbconn.select_salary().replace('\"','"',10000)
+            VALUE = request.form["VALUE"]
+            FIELD = request.form["FIELD"]
+            return dbconn.select_salary(FIELD, VALUE).replace('\"','"',10000)
     
     def post(self):
         KODE_KANTOR = request.form["KODE_KANTOR"]
