@@ -33,6 +33,15 @@ class PostgresWrapper:
             query = 'SELECT * FROM public."SALARY"'
         #print(self.get_json_response(query))
         return self.get_json_response(query)
+    
+    def select_penduduk(self, field, kondisi):
+        self.connect()
+        if kondisi!='':
+            query = 'SELECT * FROM public."KN_PENDUDUK" WHERE "'+field+'"='+"'"+kondisi+"'"
+        elif kondisi=="":
+            query = 'SELECT * FROM public."KN_PENDUDUK"'
+        #print(self.get_json_response(query))
+        return self.get_json_response(query)
         
 #dbconn = PostgresWrapper()
 #print(dbconn.select_salary())
