@@ -28,7 +28,7 @@ class PostgresWrapper:
         self.connect()
         #query = 'SELECT * FROM public."SALARY" LIMIT 2;'
         if kondisi!='':
-            query = 'SELECT * FROM public."SALARY" WHERE "'+field+'"="'+kondisi+'"'
+            query = 'SELECT * FROM public."SALARY" WHERE "'+field+'"='+"'"+kondisi+"'"
         elif kondisi=="":
             query = 'SELECT * FROM public."SALARY"'
         #print(self.get_json_response(query))
